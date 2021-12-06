@@ -4,32 +4,35 @@ export default function Posts() {
         {
             profileImg: 'img/princesa.jpg', 
             profileUser: 'leia', 
-            photo: 'img/leia.jpg', 
+            media: 'img/leia.jpg', 
             likeImg: 'img/luke.jpg', 
             likeUser: 'luke', 
             likes: 'outras trocentas pessoas',
             commentUser: 'solo',
-            comment: '❤️❤️❤️'
+            comment: '❤️❤️❤️',
+            type: 'image'
         },
         {
             profileImg: 'img/yoda3.jpg', 
             profileUser: 'yoda', 
-            photo: 'img/mestreee.jpg', 
+            media: 'img/mestreee.jpg', 
             likeImg: 'img/grogu1.jpg', 
             likeUser: 'grogu', 
             likes: 'outras trocentas pessoas',
             commentUser: 'luke',
-            comment: '🙇'
+            comment: '🙇',
+            type: 'image'
         },
         {
             profileImg: 'img/ue.jpg', 
             profileUser: 'semfuturo', 
-            photo: 'img/video.mp4', 
+            media: 'img/video.mp4', 
             likeImg: 'img/desocupado.jpg', 
             likeUser: 'desocupado', 
             likes: 'outras trocentas pessoas',
             commentUser: 'nadapafazer',
-            comment: '🐻🦆'
+            comment: '🐻🦆',
+            type: 'video'
         },
     ]
 
@@ -40,12 +43,13 @@ export default function Posts() {
                 key={index}
                 profileImg={post.profileImg}
                 profileUser={post.profileUser}
-                photo={post.photo}
+                media={post.media}
                 likeImg={post.likeImg}
                 likeUser={post.likeUser}
                 likes={post.likes}
                 commentUser={post.commentUser}
                 comment={post.comment}
+                type={post.type}
             />)}
         </div>
     );
@@ -61,9 +65,7 @@ function Post (props) {
                 </div>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
-            <div class="post-photo">
-                <img src={props.photo} />
-            </div>
+            <PostMedia media={props.media} type={props.type}/>
             <div class="post-footer">
                 <div class="post-actions">
                     <div class="reactions">
@@ -91,5 +93,24 @@ function Post (props) {
                 </div>
             </div>
         </div> 
+    );
+}
+
+function PostMedia (props) {
+    if (props.type === 'image') {
+
+        return (
+            <div class="post-photo">
+                <img src={props.media} />
+            </div>
+        );
+    }
+
+    return (
+        <div class="post-photo">
+            <video autoplay="" muted="">
+                <source src={props.media} type="video/mp4" />
+            </video>
+        </div>
     );
 }
