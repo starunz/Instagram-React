@@ -37,8 +37,13 @@ export default function Stories () {
 
     return (
         <ul class="stories">
-            {infoUserStories.map( (story, index) => <Story key={index} img= {story.img} name={story.name} /> )}
-            <div class="botao-scroll">
+            {infoUserStories.map( (story, index) => 
+            <Story 
+                key={index} 
+                img= {story.img} 
+                name={story.name} 
+            />)}
+            <div class="button-scroll">
                 <ion-icon name="chevron-forward-sharp"></ion-icon>
             </div>
         </ul>
@@ -48,7 +53,7 @@ export default function Stories () {
 function Story (props) {
     return (
         <li class="storie">
-            <div class="imagem-storie">
+            <div class="image-storie">
                 <img src= {props.img} />
             </div>
             <p>{props.name}</p>

@@ -98,7 +98,6 @@ function Post (props) {
 
 function PostMedia (props) {
     if (props.type === 'image') {
-
         return (
             <div class="post-photo">
                 <img src={props.media} />
@@ -108,7 +107,7 @@ function PostMedia (props) {
 
     return (
         <div class="post-photo">
-            <video autoplay="" muted="">
+            <video autoPlay muted>
                 <source src={props.media} type="video/mp4" />
             </video>
         </div>

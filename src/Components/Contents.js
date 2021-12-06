@@ -7,12 +7,10 @@ export default function Contents() {
     return (
         <div class="container">
             <div class="timeline">
-
                 <Stories />
                 <Posts />
-
             </div>
-
+            
             <div class="bottom-bar-mobile">
                 <div class="botoes-bottom">
                     <ion-icon name="home"></ion-icon>
@@ -21,11 +19,9 @@ export default function Contents() {
                     <ion-icon name="heart-outline"></ion-icon>
                     <ion-icon name="person-outline"></ion-icon>
                 </div>
-
             </div> 
-
+            
             <Sidebar />
-
         </div>
     );
 }

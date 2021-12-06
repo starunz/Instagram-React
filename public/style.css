@@ -110,7 +110,7 @@ a {
     align-items: center;
 }
 
-.imagem-storie {
+.image-storie {
     width: 64px;
     height: 64px;
     background-size: cover;
@@ -122,13 +122,13 @@ a {
     cursor: pointer;
 }
 
-.imagem-storie img {
+.image-storie img {
     width: 54px;
     height: 54px;
     border-radius: 50%;
 }
 
-.botao-scroll {
+.button-scroll {
     width: 30px;
     height: 30px;
     background-color: #FFFFFF;
@@ -323,7 +323,7 @@ a {
     height: 32px;
 }
 
-.sidebar .sugestions .seguir {
+.sidebar .sugestions .follow {
     color: #139EF2;
     font-weight: 500;
     font-size: 12px;
@@ -394,7 +394,7 @@ h4 {
      color: #8E8E8E;
      font-size: 13px;
  }
-.nome {
+.name {
     font-size: 14px;
     font-weight: 500;
 }
@@ -464,7 +464,7 @@ img {
         justify-content: center;
         width: 100%;
     }
-    .sidebar, .topo-container input, .botoes-topo, .botao-scroll {
+    .sidebar, .topo-container input, .botoes-topo, .button-scroll {
         display: none;
     }
     .topo-container{
