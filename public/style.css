@@ -460,14 +460,13 @@ img {
         font-size: 20px;
         margin: 0 5px;
     }
-    .topo-container, .conteudo, .timeline {
+    .topo-container, .conteudo, .timeline, .container{
         justify-content: center;
         width: 100%;
     }
     .sidebar, .topo-container input, .botoes-topo, .botao-scroll {
         display: none;
     }
-
     .topo-container{
         display: none;
     }
@@ -492,7 +491,9 @@ img {
     .post, .post-foto, .post-footer {
         width: 100%;
     }
-
+    .post-photo {
+        width: 100%;
+    }
     .post-foto img, video {
         width: 100%;
         height: 100%;
