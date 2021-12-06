@@ -8,7 +8,7 @@ export default function Sidebar() {
     }
 
     return (
-        <div class="sidebar">
+        <div className="sidebar">
             <Profile infoProfileData={infoProfile}/>
             <Sugestions />
 
@@ -18,9 +18,9 @@ export default function Sidebar() {
 
 function Profile (props) {
     return (
-        <div class="user">
+        <div className="user">
             <img src={props.infoProfileData.profileImg} />
-            <div class="text">
+            <div className="text">
                 <h4>{props.infoProfileData.profileNick}</h4>
                 <h5>{props.infoProfileData.profileUser}</h5>
             </div>

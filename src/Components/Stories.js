@@ -36,14 +36,14 @@ export default function Stories () {
     ]
 
     return (
-        <ul class="stories">
+        <ul className="stories">
             {infoUserStories.map( (story, index) => 
             <Story 
                 key={index} 
                 img= {story.img} 
                 name={story.name} 
             />)}
-            <div class="button-scroll">
+            <div className="button-scroll">
                 <ion-icon name="chevron-forward-sharp"></ion-icon>
             </div>
         </ul>
@@ -52,8 +52,8 @@ export default function Stories () {
 
 function Story (props) {
     return (
-        <li class="storie">
-            <div class="image-storie">
+        <li className="storie">
+            <div className="image-storie">
                 <img src= {props.img} />
             </div>
             <p>{props.name}</p>

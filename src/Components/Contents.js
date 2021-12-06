@@ -5,14 +5,14 @@ import Sidebar from "./Sidebar";
 
 export default function Contents() {
     return (
-        <div class="container">
-            <div class="timeline">
+        <div className="container">
+            <div className="timeline">
                 <Stories />
                 <Posts />
             </div>
             
-            <div class="bottom-bar-mobile">
-                <div class="botoes-bottom">
+            <div className="bottom-bar-mobile">
+                <div className="botoes-bottom">
                     <ion-icon name="home"></ion-icon>
                     <ion-icon name="search-outline"></ion-icon>
                     <ion-icon name="add-circle-outline"></ion-icon>

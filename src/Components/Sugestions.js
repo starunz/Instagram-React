@@ -28,8 +28,8 @@ export default function Sugestions() {
     ]
 
     return (
-        <div class="sugestions">
-        <div class="title">
+        <div className="sugestions">
+        <div className="title">
             <h1>Sugestões para você</h1>
             <div><h3>Ver tudo</h3></div>
         </div>
@@ -42,10 +42,10 @@ export default function Sugestions() {
             reason={sugestion.reason}
         />)}  
 
-        <div class="links">
+        <div className="links">
             Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
         </div>
-        <div class="copyright">
+        <div className="copyright">
             © 2021 INSTAGRAM DO FACEBOOK
         </div>
     </div>
@@ -54,15 +54,15 @@ export default function Sugestions() {
 
 function Sugestion(props) {
     return (
-        <div class="sugestion">
-            <div class="user">
+        <div className="sugestion">
+            <div className="user">
                 <img src={props.sugestionImg} />
-                <div class="text">
-                    <div class="name">{props.sugestionUser}</div>
-                    <div class="reason">{props.reason}</div>
+                <div className="text">
+                    <div className="name">{props.sugestionUser}</div>
+                    <div className="reason">{props.reason}</div>
                 </div>
             </div>
-            <div class="follow">Seguir</div>
+            <div className="follow">Seguir</div>
         </div>
     );
 }
