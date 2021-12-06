@@ -1,57 +1,57 @@
 export default function Stories () {
+
+    const infoUserStories = [
+        {
+            img: 'img/ig-11.jpg',
+            name: 'ig-11'
+        },
+        {
+            img: 'img/bb-8.jpg',
+            name: 'bb-8'
+        },
+        {
+            img: 'img/ahsoka-tano (2).jpg',
+            name: 'ahsoka_tano'
+        },
+        {
+            img: 'img/r2-d2.jpg',
+            name: 'r2-d2'
+        },
+        {
+            img: 'img/The-Mandalorian-Kuiil-Vest-510x600.jpg',
+            name: 'Kuiil'
+        },
+        {
+            img: 'img/c-d.jpg',
+            name: 'cara.dune'
+        },
+        {
+            img: 'img/grogu1.jpg',
+            name: 'grogu'
+        },
+        {
+            img: 'img/ue.jpg',
+            name: 'semfuturo'
+        },
+    ]
+
     return (
         <ul class="stories">
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/ig-11.jpg" />
-                </div>
-                <p>ig-11</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/bb-8.jpg" />
-                </div>
-                <p>bb-8</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/ahsoka-tano (2).jpg" /> 
-                </div>
-                <p>ahsoka_tano</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/r2-d2.jpg" /> 
-                </div>
-                <p>r2-d2</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/The-Mandalorian-Kuiil-Vest-510x600.jpg" />
-                </div>
-                <p>Kuiil</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/c-d.jpg" />
-                </div>
-                <p>cara.dune</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/grogu1.jpg" />
-                </div>
-                <p>grogu</p>
-            </li>
-            <li class="storie">
-                <div class="imagem-storie">
-                    <img src="img/ue.jpg" />
-                </div>
-                <p>semfuturo</p>
-            </li>
+            {infoUserStories.map( (story) => <Story img= {story.img} name={story.name} /> )}
             <div class="botao-scroll">
                 <ion-icon name="chevron-forward-sharp"></ion-icon>
             </div>
         </ul>
+    );
+}
+
+function Story (props) {
+    return (
+        <li class="storie">
+            <div class="imagem-storie">
+                <img src= {props.img} />
+            </div>
+            <p>{props.name}</p>
+        </li>
     );
 }
